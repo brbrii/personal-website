@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="This is Brilliyani">
+	<Navbar />
+	<Hero />
+	<div id="Skills" class="mt-24">
+		<h1 class="text-4xl font-bold leadi sm:text-4xl text-center mb-4">My Skills</h1>
+		<div class="flex flex-row justify-center flex-wrap gap-20">
+			<Card imgSrc="Cloud.jpg" imgAlt="profile" title="Cloud Computing" desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint maxime, exercitationem temporibus quos aliquid minus corrupti deserunt itaque quis modi sed eligendi sit! Reprehenderit necessitatibus minus voluptas nemo omnis aliquam!"/>
+			<Card imgSrc="Front.jpg" imgAlt="profile" title="Front-End" desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint maxime, exercitationem temporibus quos aliquid minus corrupti deserunt itaque quis modi sed eligendi sit! Reprehenderit necessitatibus minus voluptas nemo omnis aliquam!"/>
+		</div>
+	</div>
+</Layout>
